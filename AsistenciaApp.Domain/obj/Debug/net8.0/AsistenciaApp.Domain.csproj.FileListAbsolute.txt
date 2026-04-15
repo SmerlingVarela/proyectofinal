@@ -1,0 +1,11 @@
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\bin\Debug\net8.0\AsistenciaApp.Domain.deps.json
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\bin\Debug\net8.0\AsistenciaApp.Domain.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\bin\Debug\net8.0\AsistenciaApp.Domain.pdb
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\AsistenciaApp.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\AsistenciaApp.Domain.AssemblyInfoInputs.cache
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\AsistenciaApp.Domain.AssemblyInfo.cs
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\AsistenciaApp.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\AsistenciaApp.Domain.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\refint\AsistenciaApp.Domain.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\AsistenciaApp.Domain.pdb
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Domain\obj\Debug\net8.0\ref\AsistenciaApp.Domain.dll

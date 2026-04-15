@@ -1,0 +1,17 @@
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Application.deps.json
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Application.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Application.pdb
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Domain.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Infrastructure.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Domain.pdb
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\bin\Debug\net8.0\AsistenciaApp.Infrastructure.pdb
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.csproj.AssemblyReference.cache
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.AssemblyInfoInputs.cache
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.AssemblyInfo.cs
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.csproj.CoreCompileInputs.cache
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\Asistenc.0E4A3EE2.Up2Date
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\refint\AsistenciaApp.Application.dll
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\AsistenciaApp.Application.pdb
+C:\Users\Diego\source\repos\AsistenciaApp\AsistenciaApp.Application\obj\Debug\net8.0\ref\AsistenciaApp.Application.dll

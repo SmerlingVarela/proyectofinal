@@ -1,0 +1,1458 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\prediccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\prediccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\prediccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\prediccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\iprediccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\iprediccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\prediccion\\historialpredicciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\prediccion\\historialpredicciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\prediccion\\predicciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\prediccion\\predicciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\notificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\notificacioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\inotificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\inotificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\notificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\notificacionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\notificacion\\notificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\notificacion\\notificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\wrapper\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\wrapper\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\notificacion\\enviarnotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\notificacion\\enviarnotificaciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\estudiantetutorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\estudiantetutorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\estudiantetutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\estudiantetutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\iestudiantetutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\iestudiantetutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\tutorestudiante\\designartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\tutorestudiante\\designartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\tutorestudiante\\asignartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\tutorestudiante\\asignartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\data\\entities\\estudiantetutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\data\\entities\\estudiantetutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\actualizartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\actualizartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\tutorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\tutorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\actualizarcursovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\actualizarcursovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\tutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\tutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\itutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\itutorservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\tutor\\actualizartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\tutor\\actualizartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\extensions\\presentationregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\extensions\\presentationregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\creartutorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\creartutorvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\tutor\\tutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\tutor\\tutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\tutor\\creartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\tutor\\creartutordto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\data\\entities\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\data\\entities\\tutor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\prediccion\\generarpredicciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\prediccion\\generarpredicciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\asistenciacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\cursocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\asistenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\asistenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\asistencia\\registrarasistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\asistencia\\registrarasistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\asistencia\\asistenciaitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\asistencia\\asistenciaitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\asistencia\\asistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\asistencia\\asistenciadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\iasistenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\iasistenciaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\data\\entities\\asistencium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\data\\entities\\asistencium.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA313A0-D1E1-4FC9-870F-AEED0B7B2186}|AsistenciaApp.Domain\\AsistenciaApp.Domain.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.domain\\enum\\estadoasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA313A0-D1E1-4FC9-870F-AEED0B7B2186}|AsistenciaApp.Domain\\AsistenciaApp.Domain.csproj|solutionrelative:asistenciaapp.domain\\enum\\estadoasistencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\data\\entities\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\data\\entities\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\crearestudiantevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\crearestudiantevalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\estudiantecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\gradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\gradocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\estudianteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\estudianteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\estudiante\\crearestudiantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\estudiante\\crearestudiantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\estudiante\\estudiantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\estudiante\\estudiantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\data\\entities\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\data\\entities\\estudiante.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\usuario\\crearusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\usuario\\crearusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\usuario\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\usuario\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\iestudianteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\iestudianteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\estudiante\\actualizarestudiantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\estudiante\\actualizarestudiantedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\iusuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\usuario\\actualizarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\usuario\\actualizarusuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\cursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\cursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\icursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\icursoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\seccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\seccioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\seccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\seccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\iseccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\iseccionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\gradoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\gradoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\interfaces\\igradoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\interfaces\\igradoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\crearusuariovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\crearusuariovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\seccion\\actualizarsecciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\seccion\\actualizarsecciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\grado\\actualizargradodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\grado\\actualizargradodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\curso\\actualizarcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\curso\\actualizarcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\usuarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\dbinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\wrapper\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\wrapper\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\crearcursovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\crearcursovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\creargradovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\creargradovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\curso\\crearcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\curso\\crearcursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\curso\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\curso\\cursodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\validators\\crearseccionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\validators\\crearseccionvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EA313A0-D1E1-4FC9-870F-AEED0B7B2186}|AsistenciaApp.Domain\\AsistenciaApp.Domain.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.domain\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2EA313A0-D1E1-4FC9-870F-AEED0B7B2186}|AsistenciaApp.Domain\\AsistenciaApp.Domain.csproj|solutionrelative:asistenciaapp.domain\\enum\\roles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\seccion\\crearsecciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\seccion\\crearsecciondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\grado\\creargradodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\grado\\creargradodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\asistenciaapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\asistenciaapp.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\auth\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\auth\\authresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\dtos\\auth\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.application\\asistenciaapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0DA89D0F-5786-446F-A4B0-C447ECEC565B}|AsistenciaApp.Application\\AsistenciaApp.Application.csproj|solutionrelative:asistenciaapp.application\\asistenciaapp.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\asistenciaapp.infrastructure.csproj||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\asistenciaapp.infrastructure.csproj||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2AE7DCA4-D07D-42BB-9763-C7A06F3B32F0}|AsistenciaApp\\AsistenciaApp.csproj|solutionrelative:asistenciaapp\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|c:\\users\\diego\\source\\repos\\asistenciaapp\\asistenciaapp.infrastructure\\data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{674F78A4-7273-4215-8FDB-2DBDF798D498}|AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj|solutionrelative:asistenciaapp.infrastructure\\data\\entities\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistorialPrediccionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Prediccion\\HistorialPrediccionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Prediccion\\HistorialPrediccionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Prediccion\\HistorialPrediccionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Prediccion\\HistorialPrediccionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T20:08:28.903Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrediccionService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\PrediccionService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\PrediccionService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\PrediccionService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\PrediccionService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAIwHYAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:04:10.354Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PrediccionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Prediccion\\PrediccionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Prediccion\\PrediccionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Prediccion\\PrediccionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Prediccion\\PrediccionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:03:16.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IPrediccionService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IPrediccionService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\IPrediccionService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IPrediccionService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\IPrediccionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:03:45.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PrediccionController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\PrediccionController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\PrediccionController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\PrediccionController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\PrediccionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:06:08.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\appsettings.json",
+              "RelativeDocumentMoniker": "AsistenciaApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\appsettings.json",
+              "RelativeToolTip": "AsistenciaApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T13:49:21.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NotificacionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Notificacion\\NotificacionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Notificacion\\NotificacionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Notificacion\\NotificacionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Notificacion\\NotificacionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:58:41.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "NotificacionService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\NotificacionService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\NotificacionService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\NotificacionService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\NotificacionService.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAIwFkAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:43:06.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "INotificacionService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\INotificacionService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\INotificacionService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\INotificacionService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\INotificacionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:42:34.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NotificacionController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\NotificacionController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\NotificacionController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\NotificacionController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\NotificacionController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwB4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:43:51.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Wrapper\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Wrapper\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Wrapper\\ServiceRegistration.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Wrapper\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:08:31.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "EnviarNotificacionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Notificacion\\EnviarNotificacionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Notificacion\\EnviarNotificacionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Notificacion\\EnviarNotificacionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Notificacion\\EnviarNotificacionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:42:08.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "DesignarTutorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\TutorEstudiante\\DesignarTutorDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\TutorEstudiante\\DesignarTutorDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\TutorEstudiante\\DesignarTutorDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\TutorEstudiante\\DesignarTutorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:37:03.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EstudianteTutorController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\EstudianteTutorController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\EstudianteTutorController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\EstudianteTutorController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\EstudianteTutorController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:34:07.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EstudianteTutorService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\EstudianteTutorService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\EstudianteTutorService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\EstudianteTutorService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\EstudianteTutorService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAIwDQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:33:29.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IEstudianteTutorService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IEstudianteTutorService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\IEstudianteTutorService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IEstudianteTutorService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\IEstudianteTutorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:33:04.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "AsignarTutorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\TutorEstudiante\\AsignarTutorDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\TutorEstudiante\\AsignarTutorDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\TutorEstudiante\\AsignarTutorDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\TutorEstudiante\\AsignarTutorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:32:34.141Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ActualizarTutorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\ActualizarTutorDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\ActualizarTutorDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\ActualizarTutorDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\ActualizarTutorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:26:39.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ITutorService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\ITutorService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\ITutorService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\ITutorService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\ITutorService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:17:38.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TutorService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\TutorService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\TutorService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\TutorService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\TutorService.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowEsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:18:03.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ActualizarCursoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\ActualizarCursoValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\ActualizarCursoValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\ActualizarCursoValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\ActualizarCursoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:39:27.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TutorController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\TutorController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\TutorController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\TutorController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\TutorController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:20:22.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "EstudianteTutor.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\EstudianteTutor.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Data\\Entities\\EstudianteTutor.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\EstudianteTutor.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Data\\Entities\\EstudianteTutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:14:45.39Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ActualizarTutorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Tutor\\ActualizarTutorDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Tutor\\ActualizarTutorDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Tutor\\ActualizarTutorDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Tutor\\ActualizarTutorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:16:32.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PresentationRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Extensions\\PresentationRegistration.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Extensions\\PresentationRegistration.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Extensions\\PresentationRegistration.cs",
+              "RelativeToolTip": "AsistenciaApp\\Extensions\\PresentationRegistration.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwDcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:13:46.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CrearTutorValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearTutorValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\CrearTutorValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearTutorValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\CrearTutorValidator.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:22:29.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "TutorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Tutor\\TutorDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Tutor\\TutorDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Tutor\\TutorDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Tutor\\TutorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:17:15.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CrearTutorDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Tutor\\CrearTutorDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Tutor\\CrearTutorDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Tutor\\CrearTutorDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Tutor\\CrearTutorDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:14:41.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Tutor.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Tutor.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Data\\Entities\\Tutor.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Tutor.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Data\\Entities\\Tutor.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:16:01.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "AsistenciaController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\AsistenciaController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\AsistenciaController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\AsistenciaController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\AsistenciaController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:16:53.652Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GenerarPrediccionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Prediccion\\GenerarPrediccionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Prediccion\\GenerarPrediccionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Prediccion\\GenerarPrediccionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Prediccion\\GenerarPrediccionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T19:02:39.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AsistenciaService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\AsistenciaService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\AsistenciaService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\AsistenciaService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\AsistenciaService.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwEcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:14:02.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AsistenciaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:10:55.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AsistenciaItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaItemDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaItemDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaItemDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Asistencia\\AsistenciaItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:10:23.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "RegistrarAsistenciaDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Asistencia\\RegistrarAsistenciaDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Asistencia\\RegistrarAsistenciaDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Asistencia\\RegistrarAsistenciaDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Asistencia\\RegistrarAsistenciaDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:09:54.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CursoController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\CursoController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\CursoController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\CursoController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\CursoController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA5wCQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T17:28:56.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IAsistenciaService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IAsistenciaService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\IAsistenciaService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IAsistenciaService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\IAsistenciaService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:11:26.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Asistencium.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Asistencium.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Data\\Entities\\Asistencium.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Asistencium.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Data\\Entities\\Asistencium.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:14:18.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EstadoAsistencia.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Domain\\Enum\\EstadoAsistencia.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Domain\\Enum\\EstadoAsistencia.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Domain\\Enum\\EstadoAsistencia.cs",
+              "RelativeToolTip": "AsistenciaApp.Domain\\Enum\\EstadoAsistencia.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:12:58.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "EstudianteService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\EstudianteService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\EstudianteService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\EstudianteService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\EstudianteService.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwCAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:49:52.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "GradoController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\GradoController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\GradoController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\GradoController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\GradoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:49:35.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "CrearEstudianteValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearEstudianteValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\CrearEstudianteValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearEstudianteValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\CrearEstudianteValidator.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAewBoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:08:02.684Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Data\\Entities\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\AppDbContext.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Data\\Entities\\AppDbContext.cs",
+              "ViewState": "AgIAABkBAAAAAAAAAAAqwCsBAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T19:01:16.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EstudianteController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\EstudianteController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\EstudianteController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\EstudianteController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\EstudianteController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAwwAwAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:55:01.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "EstudianteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Estudiante\\EstudianteDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Estudiante\\EstudianteDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Estudiante\\EstudianteDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Estudiante\\EstudianteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:06:52.589Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Estudiante.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Estudiante.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Data\\Entities\\Estudiante.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Estudiante.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Data\\Entities\\Estudiante.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:14:46.744Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CrearUsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Usuario\\CrearUsuarioDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Usuario\\CrearUsuarioDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Usuario\\CrearUsuarioDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Usuario\\CrearUsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:24:52.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CrearEstudianteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Estudiante\\CrearEstudianteDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Estudiante\\CrearEstudianteDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Estudiante\\CrearEstudianteDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Estudiante\\CrearEstudianteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:07:13.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "UsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Usuario\\UsuarioDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Usuario\\UsuarioDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Usuario\\UsuarioDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Usuario\\UsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:23:42.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "ActualizarEstudianteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Estudiante\\ActualizarEstudianteDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Estudiante\\ActualizarEstudianteDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Estudiante\\ActualizarEstudianteDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Estudiante\\ActualizarEstudianteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:46:27.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IEstudianteService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IEstudianteService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\IEstudianteService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IEstudianteService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\IEstudianteService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:09:20.643Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "ActualizarUsuarioDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Usuario\\ActualizarUsuarioDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Usuario\\ActualizarUsuarioDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Usuario\\ActualizarUsuarioDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Usuario\\ActualizarUsuarioDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T18:21:02.191Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "IUsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IUsuarioService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\IUsuarioService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IUsuarioService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\IUsuarioService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:25:39.669Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "CursoService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\CursoService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\CursoService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\CursoService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\CursoService.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAuwKMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T17:25:27.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ICursoService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\ICursoService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\ICursoService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\ICursoService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\ICursoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T17:22:42.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "SeccionController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\SeccionController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\SeccionController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\SeccionController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\SeccionController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:52:41.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "SeccionService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\SeccionService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\SeccionService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\SeccionService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\SeccionService.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAuwFUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:52:09.104Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ISeccionService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\ISeccionService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\ISeccionService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\ISeccionService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\ISeccionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:51:34.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "GradoService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\GradoService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\GradoService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\GradoService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\GradoService.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAuwEYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:48:26.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "IGradoService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IGradoService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Interfaces\\IGradoService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Interfaces\\IGradoService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Interfaces\\IGradoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:47:47.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "CrearUsuarioValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearUsuarioValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\CrearUsuarioValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearUsuarioValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\CrearUsuarioValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:45:53.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ActualizarSeccionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Seccion\\ActualizarSeccionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Seccion\\ActualizarSeccionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Seccion\\ActualizarSeccionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Seccion\\ActualizarSeccionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:35:31.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ActualizarGradoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Grado\\ActualizarGradoDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Grado\\ActualizarGradoDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Grado\\ActualizarGradoDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Grado\\ActualizarGradoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:34:50.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ActualizarCursoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Curso\\ActualizarCursoDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Curso\\ActualizarCursoDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Curso\\ActualizarCursoDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Curso\\ActualizarCursoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T15:29:17.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:54:43.144Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\DbInitializer.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\DbInitializer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:01:40.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "UsuarioService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\UsuarioService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\UsuarioService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\UsuarioService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\UsuarioService.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAswFYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T14:26:37.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Wrapper\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Wrapper\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Wrapper\\ServiceRegistration.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Wrapper\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:08:02.659Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "CrearCursoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearCursoValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\CrearCursoValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearCursoValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\CrearCursoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T17:24:13.891Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Services\\AuthService.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Services\\AuthService.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Services\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:04:56.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "CrearGradoValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearGradoValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\CrearGradoValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearGradoValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\CrearGradoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:47:16.505Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "CrearCursoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Curso\\CrearCursoDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Curso\\CrearCursoDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Curso\\CrearCursoDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Curso\\CrearCursoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T17:21:40.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "CursoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Curso\\CursoDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Curso\\CursoDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Curso\\CursoDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Curso\\CursoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T17:21:05.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "CrearSeccionValidator.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearSeccionValidator.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\Validators\\CrearSeccionValidator.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\Validators\\CrearSeccionValidator.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\Validators\\CrearSeccionValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T16:46:50.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Roles.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Domain\\Enum\\Roles.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Domain\\Enum\\Roles.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Domain\\Enum\\Roles.cs",
+              "RelativeToolTip": "AsistenciaApp.Domain\\Enum\\Roles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:41:07.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Program.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Program.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Program.cs",
+              "RelativeToolTip": "AsistenciaApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T13:57:49.837Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "CrearSeccionDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Seccion\\CrearSeccionDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Seccion\\CrearSeccionDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Seccion\\CrearSeccionDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Seccion\\CrearSeccionDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:50:59.763Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "CrearGradoDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Grado\\CrearGradoDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Grado\\CrearGradoDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Grado\\CrearGradoDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Grado\\CrearGradoDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:46:28.063Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "AsistenciaApp.http",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\AsistenciaApp.http",
+              "RelativeDocumentMoniker": "AsistenciaApp\\AsistenciaApp.http",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\AsistenciaApp.http",
+              "RelativeToolTip": "AsistenciaApp\\AsistenciaApp.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-04-14T15:10:18.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AsistenciaApp\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:12:46.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "AuthResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Auth\\AuthResponseDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Auth\\AuthResponseDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Auth\\AuthResponseDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Auth\\AuthResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:03:52.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\DTOs\\Auth\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\DTOs\\Auth\\LoginDto.cs",
+              "RelativeToolTip": "AsistenciaApp.Application\\DTOs\\Auth\\LoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T15:03:22.151Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "AsistenciaApp.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\AsistenciaApp.Application.csproj",
+              "RelativeDocumentMoniker": "AsistenciaApp.Application\\AsistenciaApp.Application.csproj",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\AsistenciaApp.Application.csproj",
+              "RelativeToolTip": "AsistenciaApp.Application\\AsistenciaApp.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-14T14:30:48.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "AsistenciaApp.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-04-14T13:25:33.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Usuario.cs",
+              "RelativeDocumentMoniker": "AsistenciaApp.Infrastructure\\Data\\Entities\\Usuario.cs",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\Data\\Entities\\Usuario.cs",
+              "RelativeToolTip": "AsistenciaApp.Infrastructure\\Data\\Entities\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T13:46:44.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "AsistenciaApp\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\appsettings.Development.json",
+              "RelativeToolTip": "AsistenciaApp\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-04-14T13:55:27.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAHsIAAAAAAAAAAAWwIwIAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-04-14T13:47:22.669Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

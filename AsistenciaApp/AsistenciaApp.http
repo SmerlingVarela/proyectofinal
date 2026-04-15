@@ -1,0 +1,6 @@
+@AsistenciaApp_HostAddress = http://localhost:5255
+
+GET {{AsistenciaApp_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
