@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pQvdi1vUp3M=",
+  "dgSpecHash": "JeYr3T+zJoY=",
   "success": true,
   "projectFilePath": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -50,8 +50,8 @@
     "C:\\Users\\smerl\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\smerl\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\smerl\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
-    "C:\\Users\\smerl\\.nuget\\packages\\npgsql\\8.0.6\\npgsql.8.0.6.nupkg.sha512",
-    "C:\\Users\\smerl\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.11\\npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
+    "C:\\Users\\smerl\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
+    "C:\\Users\\smerl\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.4\\npgsql.entityframeworkcore.postgresql.8.0.4.nupkg.sha512",
     "C:\\Users\\smerl\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",
     "C:\\Users\\smerl\\.nuget\\packages\\system.codedom\\6.0.0\\system.codedom.6.0.0.nupkg.sha512",
     "C:\\Users\\smerl\\.nuget\\packages\\system.collections.immutable\\7.0.0\\system.collections.immutable.7.0.0.nupkg.sha512",
