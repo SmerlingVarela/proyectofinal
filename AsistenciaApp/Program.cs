@@ -1,4 +1,3 @@
-
 using AsistenciaApp.Application;
 using AsistenciaApp.Application.Interfaces;
 using AsistenciaApp.Application.Services;
@@ -10,7 +9,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-
 namespace AsistenciaApp
 {
     public class Program
@@ -19,26 +17,28 @@ namespace AsistenciaApp
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            builder.Services.AddCors(options =>
+            {
+                options.AddPolicy("AllowFrontend", policy =>
+                    policy.AllowAnyOrigin()
+                          .AllowAnyMethod()
+                          .AllowAnyHeader());
+            });
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddPresentationLayer(builder.Configuration); 
+            builder.Services.AddPresentationLayer(builder.Configuration);
             builder.Services.AddInfrastructureLayer(builder.Configuration);
-            builder.Services.AddApplicationLayer(); 
-           
-           
-
+            builder.Services.AddApplicationLayer();
 
             var app = builder.Build();
+
             using (var scope = app.Services.CreateScope())
             {
                 var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
                 DbInitializer.Seed(context);
             }
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
@@ -46,14 +46,10 @@ namespace AsistenciaApp
             }
 
             app.UseHttpsRedirection();
-
+            app.UseCors("AllowFrontend");
             app.UseAuthentication();
             app.UseAuthorization();
-
-
-
             app.MapControllers();
-
             app.Run();
         }
     }
