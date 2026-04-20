@@ -1,11 +1,5 @@
 ﻿using AsistenciaApp.Infrastructure.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-
+using Microsoft.EntityFrameworkCore;
 
 namespace AsistenciaApp.Infrastructure
 {
@@ -13,6 +7,9 @@ namespace AsistenciaApp.Infrastructure
     {
         public static void Seed(AppDbContext context)
         {
+            // Crea las tablas si no existen
+            context.Database.EnsureCreated();
+
             if (!context.Usuarios.Any(u => u.Correo == "admin@test.com"))
             {
                 context.Usuarios.Add(new Usuario
