@@ -2,6 +2,7 @@ using AsistenciaApp.Application;
 using AsistenciaApp.Extensions;
 using AsistenciaApp.Infrastructure;
 using AsistenciaApp.Infrastructure.Data.Entities;
+using AsistenciaApp.Infrastructure.Wrapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace AsistenciaApp
