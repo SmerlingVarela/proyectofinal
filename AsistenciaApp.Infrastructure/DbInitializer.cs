@@ -1,5 +1,4 @@
 ﻿using AsistenciaApp.Infrastructure.Data.Entities;
-using Microsoft.EntityFrameworkCore;
 
 namespace AsistenciaApp.Infrastructure
 {
@@ -7,9 +6,6 @@ namespace AsistenciaApp.Infrastructure
     {
         public static void Seed(AppDbContext context)
         {
-            // Crea las tablas si no existen
-            context.Database.EnsureCreated();
-
             if (!context.Usuarios.Any(u => u.Correo == "admin@test.com"))
             {
                 context.Usuarios.Add(new Usuario
@@ -19,7 +15,6 @@ namespace AsistenciaApp.Infrastructure
                     Contrasena = BCrypt.Net.BCrypt.HashPassword("123456"),
                     Rol = "Director"
                 });
-
                 context.SaveChanges();
             }
         }

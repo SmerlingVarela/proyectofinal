@@ -1,13 +1,8 @@
 using AsistenciaApp.Application;
-using AsistenciaApp.Application.Interfaces;
-using AsistenciaApp.Application.Services;
 using AsistenciaApp.Extensions;
 using AsistenciaApp.Infrastructure;
 using AsistenciaApp.Infrastructure.Data.Entities;
-using AsistenciaApp.Infrastructure.Wrapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
-using System.Text;
 
 namespace AsistenciaApp
 {
@@ -33,13 +28,22 @@ namespace AsistenciaApp
 
             var app = builder.Build();
 
+            // Crear tablas y seed
             using (var scope = app.Services.CreateScope())
             {
-                var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-                DbInitializer.Seed(context);
+                var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+                try
+                {
+                    db.Database.EnsureCreated();
+                    DbInitializer.Seed(db);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("DB init error: " + ex.Message);
+                }
             }
 
-            if (app.Environment.IsDevelopment())
+            if (app.Environment.IsDevelopment() || true)
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
