@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Qk7ti7Sf+EA=",
+  "dgSpecHash": "wIFESEWw0NU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Domain\\AsistenciaApp.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp.Domain\\AsistenciaApp.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\smerl\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\smerl\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\smerl\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

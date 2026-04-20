@@ -619,6 +619,41 @@
           }
         }
       },
+      "Npgsql/8.0.6": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.11",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.11",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.11",
+          "Npgsql": "8.0.6"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "SharpGrip.FluentValidation.AutoValidation.Mvc/2.0.0": {
         "type": "package",
         "dependencies": {
@@ -1164,7 +1199,8 @@
         "dependencies": {
           "AsistenciaApp.Domain": "1.0.0",
           "BCrypt.Net-Next": "4.1.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2"
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.2",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.11"
         },
         "compile": {
           "bin/placeholder/AsistenciaApp.Infrastructure.dll": {}
@@ -2259,6 +2295,44 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Npgsql/8.0.6": {
+      "sha512": "KaS6CY5kY2Sd0P00MSeFcOI3t2DiQ4UWG8AuRpVOUeDWITOKfoEEG91DP3cmT6aerixPkjwKgXxnpDxIkDpO6g==",
+      "type": "package",
+      "path": "npgsql/8.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.8.0.6.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.11": {
+      "sha512": "leShR/O/nSIS3Jpj8yUBmkzaXzBbtlV326+MYkX2BwAj2qSNrUv/H6m8G9Hnv2zUkQYccTpmV5jIVq5vdciEUA==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/8.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.8.0.11.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "SharpGrip.FluentValidation.AutoValidation.Mvc/2.0.0": {
       "sha512": "QnTKNfcx4JzvMR/+hzqWFaXQgrbDSAU/xB9LVgh2povFQpySHTZH4gknulpNy2Hk6ELPy6YpglkEIS3P4E9IMA==",
       "type": "package",
@@ -3193,23 +3267,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Diego\\.nuget\\packages\\": {},
+    "C:\\Users\\smerl\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\AsistenciaApp.csproj",
+      "projectUniqueName": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp\\AsistenciaApp.csproj",
       "projectName": "AsistenciaApp",
-      "projectPath": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\AsistenciaApp.csproj",
-      "packagesPath": "C:\\Users\\Diego\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp\\obj\\",
+      "projectPath": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp\\AsistenciaApp.csproj",
+      "packagesPath": "C:\\Users\\smerl\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Diego\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\smerl\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -3218,17 +3292,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\AsistenciaApp.Application.csproj": {
-              "projectPath": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Application\\AsistenciaApp.Application.csproj"
+            "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp.Application\\AsistenciaApp.Application.csproj": {
+              "projectPath": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp.Application\\AsistenciaApp.Application.csproj"
             },
-            "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Diego\\source\\repos\\AsistenciaApp\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj"
+            "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\smerl\\Proyecto-Final---AutoZone\\proyectofinal\\AsistenciaApp.Infrastructure\\AsistenciaApp.Infrastructure.csproj"
             }
           }
         }
@@ -3243,7 +3318,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "10.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -3281,6 +3356,24 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.25, 8.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.25, 8.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.25, 8.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.25, 8.0.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -3289,7 +3382,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.312/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

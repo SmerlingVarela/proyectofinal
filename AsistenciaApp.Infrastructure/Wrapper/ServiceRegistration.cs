@@ -17,7 +17,7 @@ namespace AsistenciaApp.Infrastructure.Wrapper
         {
             // Registro de la Base de Datos
             services.AddDbContext<AppDbContext>(options =>
-               options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+               options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
 
         
             
