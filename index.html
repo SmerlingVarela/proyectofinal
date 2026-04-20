@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema de Registro - Asistencia Estudiantil</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --sidebar-bg: #1a40d4;
+    --sidebar-hover: rgba(255,255,255,0.12);
+    --sidebar-active: rgba(255,255,255,0.22);
+    --sidebar-width: 155px;
+    --main-bg: #e8e6e1;
+    --card-bg: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #666;
+    --text-muted: #999;
+    --border: #e0ddd8;
+    --blue: #1a40d4;
+    --green: #22c55e;
+    --red: #ef4444;
+    --yellow: #f59e0b;
+    --badge-enviado-bg: #dcfce7;
+    --badge-enviado-text: #16a34a;
+    --badge-fallido-bg: #fee2e2;
+    --badge-fallido-text: #dc2626;
+    --font: 'DM Sans', sans-serif;
+  }
+
+  html, body { height: 100%; font-family: var(--font); background: var(--main-bg); color: var(--text-primary); }
+
+  /* LAYOUT */
+  .app { display: flex; height: 100vh; overflow: hidden; }
+
+  /* SIDEBAR */
+  .sidebar {
+    width: var(--sidebar-width);
+    background: var(--sidebar-bg);
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .sidebar-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 14px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  .logo-icon {
+    width: 32px; height: 32px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .logo-icon svg { width: 18px; height: 18px; fill: white; }
+  .logo-text { line-height: 1.2; }
+  .logo-title { font-size: 11px; font-weight: 700; color: white; }
+  .logo-sub { font-size: 9px; color: rgba(255,255,255,0.7); }
+
+  .sidebar-nav { flex: 1; padding: 8px 0; overflow-y: auto; }
+  .nav-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 10px 14px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 12px; font-weight: 500;
+    border-radius: 0;
+    transition: background 0.15s;
+    border-left: 3px solid transparent;
+  }
+  .nav-item:hover { background: var(--sidebar-hover); color: white; }
+  .nav-item.active {
+    background: var(--sidebar-active);
+    color: white;
+    border-left: 3px solid white;
+  }
+  .nav-item svg { width: 16px; height: 16px; flex-shrink: 0; }
+
+  /* MAIN */
+  .main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+  .content { flex: 1; overflow-y: auto; padding: 28px 32px; }
+
+  /* PAGE HEADER */
+  .page-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 24px; }
+  .page-title { font-size: 24px; font-weight: 700; color: var(--text-primary); }
+  .page-subtitle { font-size: 13px; color: var(--text-secondary); margin-top: 3px; }
+
+  /* BUTTONS */
+  .btn-primary {
+    background: var(--blue);
+    color: white;
+    border: none;
+    padding: 9px 18px;
+    border-radius: 6px;
+    font-size: 13px; font-weight: 600;
+    cursor: pointer;
+    display: flex; align-items: center; gap: 6px;
+    font-family: var(--font);
+    transition: opacity 0.15s;
+    white-space: nowrap;
+  }
+  .btn-primary:hover { opacity: 0.88; }
+
+  /* CARDS */
+  .card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 20px 24px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  }
+
+  /* STAT CARDS */
+  .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+  .stat-card { background: var(--card-bg); border-radius: 10px; padding: 20px 24px; }
+  .stat-icon {
+    width: 36px; height: 36px; border-radius: 8px;
+    display: flex; align-items: center; justify-content: center; margin-bottom: 10px;
+  }
+  .stat-icon.blue { background: #eff6ff; }
+  .stat-icon.green { background: #f0fdf4; }
+  .stat-icon.yellow { background: #fffbeb; }
+  .stat-icon svg { width: 20px; height: 20px; }
+  .stat-label { font-size: 12px; color: var(--text-secondary); margin-bottom: 6px; }
+  .stat-value { font-size: 28px; font-weight: 700; color: var(--text-primary); line-height: 1; }
+  .stat-sub { font-size: 11px; margin-top: 6px; }
+  .stat-sub.positive { color: var(--green); }
+  .stat-sub.alert { color: var(--red); }
+  .stat-sub.muted { color: var(--text-secondary); }
+
+  /* CHARTS ROW */
+  .charts-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .chart-card { background: var(--card-bg); border-radius: 10px; padding: 20px 24px; }
+  .chart-title { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+  .chart-wrap { position: relative; height: 160px; }
+
+  /* ALERTS */
+  .alerts-section { background: var(--card-bg); border-radius: 10px; padding: 20px 24px; }
+  .section-title { font-size: 14px; font-weight: 600; margin-bottom: 16px; }
+  .alert-item {
+    display: flex; align-items: center; gap: 14px;
+    padding: 12px 0;
+    border-left: 3px solid var(--blue);
+    padding-left: 14px;
+    margin-bottom: 8px;
+  }
+  .alert-avatar {
+    width: 34px; height: 34px; border-radius: 50%;
+    background: #ede9fe; display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .alert-avatar svg { width: 18px; height: 18px; color: #7c3aed; }
+  .alert-name { font-size: 13px; font-weight: 600; }
+  .alert-desc { font-size: 12px; color: var(--text-secondary); }
+  .alert-time { font-size: 11px; color: var(--blue); margin-top: 2px; }
+
+  /* TABLE */
+  .table-wrap { background: var(--card-bg); border-radius: 10px; overflow: hidden; }
+  table { width: 100%; border-collapse: collapse; }
+  thead th {
+    text-align: left; padding: 12px 20px;
+    font-size: 12px; font-weight: 600; color: var(--text-secondary);
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+  }
+  tbody tr { border-bottom: 1px solid var(--border); transition: background 0.1s; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: #f9f8f6; }
+  tbody td { padding: 13px 20px; font-size: 13px; color: var(--text-primary); }
+
+  /* SEARCH */
+  .search-bar {
+    width: 100%; padding: 10px 16px 10px 38px;
+    border: 1px solid var(--border); border-radius: 8px;
+    font-size: 13px; font-family: var(--font);
+    background: var(--card-bg);
+    color: var(--text-primary);
+    outline: none;
+    margin-bottom: 16px;
+  }
+  .search-wrap { position: relative; }
+  .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); }
+  .search-icon svg { width: 16px; height: 16px; color: var(--text-muted); }
+
+  /* BADGES */
+  .badge {
+    display: inline-flex; align-items: center;
+    padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600;
+  }
+  .badge-enviado { background: var(--badge-enviado-bg); color: var(--badge-enviado-text); }
+  .badge-fallido { background: var(--badge-fallido-bg); color: var(--badge-fallido-text); }
+
+  /* NOTIFICATIONS */
+  .notif-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .notif-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 20px; }
+  .notif-stat-card {
+    background: var(--card-bg); border-radius: 10px; padding: 20px 24px;
+    display: flex; align-items: center; gap: 16px;
+  }
+  .notif-stat-icon {
+    width: 42px; height: 42px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+  }
+  .notif-stat-icon.green { background: #f0fdf4; }
+  .notif-stat-icon.red { background: #fef2f2; }
+  .notif-stat-icon svg { width: 22px; height: 22px; }
+  .notif-stat-label { font-size: 12px; color: var(--text-secondary); }
+  .notif-stat-value { font-size: 26px; font-weight: 700; }
+
+  .notif-list { background: var(--card-bg); border-radius: 10px; overflow: hidden; }
+  .notif-item {
+    display: flex; align-items: center; gap: 14px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--border);
+  }
+  .notif-item:last-child { border-bottom: none; }
+  .notif-status-icon { width: 32px; height: 32px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .notif-status-icon.green { background: #f0fdf4; }
+  .notif-status-icon.red { background: #fef2f2; }
+  .notif-status-icon svg { width: 16px; height: 16px; }
+  .notif-recipient { font-size: 13px; font-weight: 600; }
+  .notif-msg { font-size: 12px; color: var(--text-secondary); margin-top: 2px; }
+  .notif-time { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--text-muted); margin-top: 3px; }
+  .notif-item-right { margin-left: auto; }
+
+  /* ATTENDANCE */
+  .attend-btn-group { display: flex; gap: 6px; }
+  .attend-btn {
+    padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border);
+    font-size: 12px; font-weight: 500; cursor: pointer;
+    background: #f5f4f1; color: var(--text-secondary);
+    font-family: var(--font);
+    display: flex; align-items: center; gap: 4px;
+    transition: all 0.15s;
+  }
+  .attend-btn:hover { border-color: #aaa; }
+  .attend-btn.active-presente { background: #f0fdf4; border-color: var(--green); color: #16a34a; }
+  .attend-btn.active-tarde { background: #fffbeb; border-color: var(--yellow); color: #d97706; }
+  .attend-btn.active-ausente { background: #fef2f2; border-color: var(--red); color: #dc2626; }
+
+  /* PREDICTIONS */
+  .pred-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+  .pred-card { background: var(--card-bg); border-radius: 10px; padding: 20px 24px; }
+  .pred-label { font-size: 12px; color: var(--text-secondary); margin-bottom: 8px; }
+  .pred-value { font-size: 26px; font-weight: 700; }
+  .pred-value.green { color: #16a34a; }
+  .pred-value.yellow { color: #d97706; }
+  .pred-value.red { color: #dc2626; }
+  .risk-bar { height: 6px; background: var(--border); border-radius: 3px; margin-top: 10px; overflow: hidden; }
+  .risk-fill { height: 100%; border-radius: 3px; }
+  .risk-fill.low { background: var(--green); width: 70%; }
+  .risk-fill.mid { background: var(--yellow); width: 20%; }
+  .risk-fill.high { background: var(--red); width: 10%; }
+
+  /* USUARIOS */
+  .user-role-badge {
+    display: inline-flex; padding: 3px 10px; border-radius: 12px;
+    font-size: 11px; font-weight: 600;
+  }
+  .role-docente { background: #eff6ff; color: #1d4ed8; }
+  .role-admin { background: #f5f3ff; color: #6d28d9; }
+
+  /* FOOTER */
+  .page-footer {
+    padding: 28px 0 12px;
+    text-align: center;
+  }
+  .footer-title { font-size: 12px; color: var(--text-secondary); margin-bottom: 10px; font-weight: 600; }
+  .footer-socials { display: flex; justify-content: center; gap: 10px; margin-bottom: 10px; }
+  .social-btn {
+    width: 36px; height: 36px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    cursor: pointer; transition: transform 0.15s, box-shadow 0.15s;
+  }
+  .social-btn:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+  .social-btn svg { width: 18px; height: 18px; fill: white; }
+  .social-fb { background: #3B5998; }
+  .social-wa { background: #25D366; }
+  .social-ig { background: #E1306C; }
+  .footer-copy { font-size: 11px; color: var(--text-muted); }
+
+  /* PAGE VISIBILITY */
+  .page { display: none; }
+  .page.active { display: block; }
+
+  /* LOGIN PAGE */
+  .login-page {
+    min-height: 100vh; display: flex; align-items: center; justify-content: center;
+    background: linear-gradient(135deg, #1a40d4 0%, #0f2a9e 100%);
+  }
+  .login-card {
+    background: white; border-radius: 16px; padding: 40px 36px;
+    width: 100%; max-width: 400px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+  .login-logo { text-align: center; margin-bottom: 28px; }
+  .login-logo-icon {
+    width: 56px; height: 56px; background: var(--blue); border-radius: 14px;
+    display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;
+  }
+  .login-logo-icon svg { width: 28px; height: 28px; fill: white; }
+  .login-title { font-size: 20px; font-weight: 700; color: var(--text-primary); }
+  .login-sub { font-size: 13px; color: var(--text-secondary); margin-top: 4px; }
+  .form-group { margin-bottom: 16px; }
+  .form-label { font-size: 12px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; display: block; }
+  .form-input {
+    width: 100%; padding: 10px 14px; border: 1px solid var(--border);
+    border-radius: 8px; font-size: 14px; font-family: var(--font);
+    outline: none; transition: border-color 0.15s;
+  }
+  .form-input:focus { border-color: var(--blue); }
+  .btn-login {
+    width: 100%; padding: 12px; background: var(--blue); color: white;
+    border: none; border-radius: 8px; font-size: 14px; font-weight: 700;
+    font-family: var(--font); cursor: pointer; margin-top: 8px;
+    transition: opacity 0.15s;
+  }
+  .btn-login:hover { opacity: 0.9; }
+
+  /* MODAL */
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1000; display: none;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: white; border-radius: 12px; padding: 28px 28px 24px;
+    width: 100%; max-width: 440px; box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+  .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+  .modal-title { font-size: 16px; font-weight: 700; }
+  .modal-close { background: none; border: none; cursor: pointer; padding: 4px; color: var(--text-muted); }
+  .modal-close:hover { color: var(--text-primary); }
+  .modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+  .btn-secondary {
+    padding: 9px 18px; border: 1px solid var(--border); border-radius: 6px;
+    font-size: 13px; font-weight: 600; cursor: pointer; background: white;
+    font-family: var(--font); color: var(--text-secondary);
+  }
+  .btn-secondary:hover { background: #f5f4f1; }
+
+  /* SAVE BTN bottom right */
+  .save-bar { display: flex; justify-content: flex-end; padding-top: 16px; }
+
+  /* SCROLL */
+  .content::-webkit-scrollbar { width: 6px; }
+  .content::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+</style>
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginPage" class="login-page">
+  <div class="login-card">
+    <div class="login-logo">
+      <div class="login-logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <div class="login-title">Sistema de Registro</div>
+      <div class="login-sub">Asistencia Estudiantil</div>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Correo electrónico</label>
+      <input class="form-input" type="email" placeholder="docente@escuela.edu.do" value="docente@escuela.edu.do">
+    </div>
+    <div class="form-group">
+      <label class="form-label">Contraseña</label>
+      <input class="form-input" type="password" placeholder="••••••••" value="12345678">
+    </div>
+    <button class="btn-login" onclick="enterApp()">Iniciar sesión</button>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="appShell" class="app" style="display:none;">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-title">Sistema de Registro</div>
+        <div class="logo-sub">Asistencia Estudiantil</div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-item active" onclick="showPage('dashboard', this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+        Dashboard
+      </div>
+      <div class="nav-item" onclick="showPage('cursos', this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        Cursos
+      </div>
+      <div class="nav-item" onclick="showPage('estudiantes', this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        Estudiantes
+      </div>
+      <div class="nav-item" onclick="showPage('tutores', this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        Tutores
+      </div>
+      <div class="nav-item" onclick="showPage('usuarios', this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        Usuarios
+      </div>
+      <div class="nav-item" onclick="showPage('asistencia', this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/><path d="M9 16l2 2 4-4"/></svg>
+        Asistencia
+      </div>
+      <div class="nav-item" onclick="showPage('predicciones', this)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        Predicciones
+      </div>
+      <div class="nav-item" onclick="showPage('notificaciones', this)">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>
+        Notificaciones
+      </div>
+    </nav>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+    <div class="content">
+
+      <!-- DASHBOARD -->
+      <div id="page-dashboard" class="page active">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Dashboard</div>
+            <div class="page-subtitle">Resumen general del sistema educativo</div>
+          </div>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <div class="stat-label">Total Estudiantes</div>
+            <div class="stat-value">185</div>
+            <div class="stat-sub positive">+12 este mes</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+            </div>
+            <div class="stat-label">Asistencia del Día</div>
+            <div class="stat-value">90%</div>
+            <div class="stat-sub muted">167 de 185 estudiantes</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon yellow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <div class="stat-label">Estudiantes en Riesgo</div>
+            <div class="stat-value">8</div>
+            <div class="stat-sub alert">Requiere atención</div>
+          </div>
+        </div>
+        <div class="charts-row">
+          <div class="chart-card">
+            <div class="chart-title">Asistencia Semanal</div>
+            <div class="chart-wrap"><canvas id="chartSemanal"></canvas></div>
+          </div>
+          <div class="chart-card">
+            <div class="chart-title">Distribución de Riesgo</div>
+            <div class="chart-wrap"><canvas id="chartRiesgo"></canvas></div>
+          </div>
+        </div>
+        <div class="alerts-section">
+          <div class="section-title">Alertas Recientes</div>
+          <div class="alert-item">
+            <div class="alert-avatar"><svg viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></div>
+            <div><div class="alert-name">María González</div><div class="alert-desc">Bajo rendimiento en Matemáticas</div><div class="alert-time">Hace 2 horas</div></div>
+          </div>
+          <div class="alert-item">
+            <div class="alert-avatar"><svg viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></div>
+            <div><div class="alert-name">Carlos Ramírez</div><div class="alert-desc">Ausencias frecuentes</div><div class="alert-time">Hace 4 horas</div></div>
+          </div>
+          <div class="alert-item">
+            <div class="alert-avatar"><svg viewBox="0 0 24 24" fill="#7c3aed"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg></div>
+            <div><div class="alert-name">Ana Martínez</div><div class="alert-desc">Predicción de riesgo alto</div><div class="alert-time">Hace 6 horas</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CURSOS -->
+      <div id="page-cursos" class="page">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Gestión de Cursos</div>
+            <div class="page-subtitle">Administra los cursos y secciones del año escolar</div>
+          </div>
+          <button class="btn-primary" onclick="openModal('modalCurso')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            Crear curso
+          </button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Grado</th><th>Sección</th><th>Docente</th><th>Año Escolar</th></tr></thead>
+            <tbody>
+              <tr><td>1ro</td><td>A</td><td>Prof. María García</td><td>2024-2025</td></tr>
+              <tr><td>1ro</td><td>B</td><td>Prof. Juan Pérez</td><td>2024-2025</td></tr>
+              <tr><td>2do</td><td>A</td><td>Prof. Carmen López</td><td>2024-2025</td></tr>
+              <tr><td>2do</td><td>B</td><td>Prof. Roberto Silva</td><td>2024-2025</td></tr>
+              <tr><td>3ro</td><td>A</td><td>Prof. Ana Martínez</td><td>2024-2025</td></tr>
+              <tr><td>3ro</td><td>B</td><td>Prof. Luis Rodríguez</td><td>2024-2025</td></tr>
+              <tr><td>4to</td><td>A</td><td>Prof. Patricia Gómez</td><td>2024-2025</td></tr>
+              <tr><td>4to</td><td>B</td><td>Prof. Miguel Torres</td><td>2024-2025</td></tr>
+              <tr><td>5to</td><td>A</td><td>Prof. Laura Sánchez</td><td>2024-2025</td></tr>
+              <tr><td>5to</td><td>B</td><td>Prof. Carlos Herrera</td><td>2024-2025</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-footer">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-socials">
+            <div class="social-btn social-fb"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-btn social-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+            <div class="social-btn social-ig"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg></div>
+          </div>
+          <div class="footer-copy">© 2026 Sistema de Registro de Asistencia Estudiantil</div>
+        </div>
+      </div>
+
+      <!-- ESTUDIANTES -->
+      <div id="page-estudiantes" class="page">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Gestión de Estudiantes</div>
+            <div class="page-subtitle">Administra el registro de estudiantes del año escolar</div>
+          </div>
+          <button class="btn-primary" onclick="openModal('modalEstudiante')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            Agregar estudiante
+          </button>
+        </div>
+        <div class="search-wrap" style="margin-bottom:12px;">
+          <span class="search-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></span>
+          <input class="search-bar" placeholder="Buscar por nombre, apellido o curso...">
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Nombre</th><th>Apellido</th><th>Curso</th></tr></thead>
+            <tbody>
+              <tr><td>Ana</td><td>Martínez</td><td>5to A</td></tr>
+              <tr><td>Carlos</td><td>Ramírez</td><td>5to A</td></tr>
+              <tr><td>María</td><td>González</td><td>5to A</td></tr>
+              <tr><td>Juan</td><td>López</td><td>4to B</td></tr>
+              <tr><td>Laura</td><td>Fernández</td><td>4to A</td></tr>
+              <tr><td>Pedro</td><td>Sánchez</td><td>3ro B</td></tr>
+              <tr><td>Sofía</td><td>Torres</td><td>3ro A</td></tr>
+              <tr><td>Diego</td><td>Morales</td><td>2do B</td></tr>
+              <tr><td>Valentina</td><td>Castro</td><td>2do A</td></tr>
+              <tr><td>Lucas</td><td>Herrera</td><td>1ro B</td></tr>
+              <tr><td>Isabella</td><td>Vega</td><td>1ro A</td></tr>
+              <tr><td>Mateo</td><td>Ruiz</td><td>5to B</td></tr>
+              <tr><td>Camila</td><td>Flores</td><td>4to A</td></tr>
+              <tr><td>Santiago</td><td>Mendoza</td><td>3ro B</td></tr>
+              <tr><td>Emma</td><td>Silva</td><td>2do A</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-footer">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-socials">
+            <div class="social-btn social-fb"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-btn social-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+            <div class="social-btn social-ig"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg></div>
+          </div>
+          <div class="footer-copy">© 2026 Sistema de Registro de Asistencia Estudiantil</div>
+        </div>
+      </div>
+
+      <!-- TUTORES -->
+      <div id="page-tutores" class="page">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Gestión de Tutores</div>
+            <div class="page-subtitle">Administra la información de padres y tutores</div>
+          </div>
+          <button class="btn-primary" onclick="openModal('modalTutor')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            Agregar tutor
+          </button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Nombre</th><th>Teléfono</th><th>Parentesco</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Roberto Martínez</strong></td><td>809 000-000</td><td>Padre</td></tr>
+              <tr><td><strong>Carmen Ramírez</strong></td><td>809 000-000</td><td>Madre</td></tr>
+              <tr><td><strong>Luis González</strong></td><td>809 000-000</td><td>Padre</td></tr>
+              <tr><td><strong>Patricia López</strong></td><td>809 000-000</td><td>Madre</td></tr>
+              <tr><td><strong>Jorge Fernández</strong></td><td>809 000-000</td><td>Padre</td></tr>
+              <tr><td><strong>Isabel Sánchez</strong></td><td>809 000-000</td><td>Madre</td></tr>
+              <tr><td><strong>Fernando Torres</strong></td><td>809 000-000</td><td>Tío</td></tr>
+              <tr><td><strong>Gloria Morales</strong></td><td>809 000-000</td><td>Abuela</td></tr>
+              <tr><td><strong>Ricardo Castro</strong></td><td>809 000-000</td><td>Padre</td></tr>
+              <tr><td><strong>Mónica Herrera</strong></td><td>809 000-000</td><td>Madre</td></tr>
+              <tr><td><strong>Alberto Vega</strong></td><td>809 000-000</td><td>Abuelo</td></tr>
+              <tr><td><strong>Sandra Ruiz</strong></td><td>809 000-000</td><td>Madre</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-footer">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-socials">
+            <div class="social-btn social-fb"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-btn social-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+            <div class="social-btn social-ig"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg></div>
+          </div>
+          <div class="footer-copy">© 2026 Sistema de Registro de Asistencia Estudiantil</div>
+        </div>
+      </div>
+
+      <!-- USUARIOS -->
+      <div id="page-usuarios" class="page">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Gestión de Usuarios</div>
+            <div class="page-subtitle">Administra los usuarios del sistema</div>
+          </div>
+          <button class="btn-primary" onclick="openModal('modalUsuario')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            Agregar usuario
+          </button>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Nombre</th><th>Correo</th><th>Rol</th></tr></thead>
+            <tbody>
+              <tr><td><strong>María García</strong></td><td>mgarcia@escuela.edu.do</td><td><span class="user-role-badge role-docente">Docente</span></td></tr>
+              <tr><td><strong>Juan Pérez</strong></td><td>jperez@escuela.edu.do</td><td><span class="user-role-badge role-docente">Docente</span></td></tr>
+              <tr><td><strong>Admin Sistema</strong></td><td>admin@escuela.edu.do</td><td><span class="user-role-badge role-admin">Admin</span></td></tr>
+              <tr><td><strong>Carmen López</strong></td><td>clopez@escuela.edu.do</td><td><span class="user-role-badge role-docente">Docente</span></td></tr>
+              <tr><td><strong>Roberto Silva</strong></td><td>rsilva@escuela.edu.do</td><td><span class="user-role-badge role-docente">Docente</span></td></tr>
+              <tr><td><strong>Ana Martínez</strong></td><td>amartinez@escuela.edu.do</td><td><span class="user-role-badge role-docente">Docente</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-footer">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-socials">
+            <div class="social-btn social-fb"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-btn social-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+            <div class="social-btn social-ig"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg></div>
+          </div>
+          <div class="footer-copy">© 2026 Sistema de Registro de Asistencia Estudiantil</div>
+        </div>
+      </div>
+
+      <!-- ASISTENCIA -->
+      <div id="page-asistencia" class="page">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Registrar Asistencia</div>
+            <div class="page-subtitle">5to A · domingo, 19 de abril de 2026</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Matrícula</th><th>Estudiante</th><th>Grado</th><th>Estado</th></tr></thead>
+            <tbody id="attendanceBody">
+            </tbody>
+          </table>
+        </div>
+        <div class="save-bar">
+          <button class="btn-primary" onclick="alert('Asistencia guardada correctamente')">Guardar asistencia</button>
+        </div>
+        <div class="page-footer">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-socials">
+            <div class="social-btn social-fb"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-btn social-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+            <div class="social-btn social-ig"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg></div>
+          </div>
+          <div class="footer-copy">© 2026 Sistema de Registro de Asistencia Estudiantil</div>
+        </div>
+      </div>
+
+      <!-- PREDICCIONES -->
+      <div id="page-predicciones" class="page">
+        <div class="page-header">
+          <div>
+            <div class="page-title">Predicciones de Riesgo</div>
+            <div class="page-subtitle">Análisis predictivo de abandono escolar por ausencias</div>
+          </div>
+          <button class="btn-primary" onclick="alert('Predicciones generadas')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+            Generar predicción
+          </button>
+        </div>
+        <div class="pred-grid">
+          <div class="pred-card">
+            <div class="pred-label">Riesgo Bajo</div>
+            <div class="pred-value green">130</div>
+            <div class="risk-bar"><div class="risk-fill low"></div></div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Ausencia &lt; 20%</div>
+          </div>
+          <div class="pred-card">
+            <div class="pred-label">Riesgo Medio</div>
+            <div class="pred-value yellow">47</div>
+            <div class="risk-bar"><div class="risk-fill mid"></div></div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Ausencia 20% – 49%</div>
+          </div>
+          <div class="pred-card">
+            <div class="pred-label">Riesgo Alto</div>
+            <div class="pred-value red">8</div>
+            <div class="risk-bar"><div class="risk-fill high"></div></div>
+            <div style="font-size:11px;color:var(--text-muted);margin-top:6px;">Ausencia ≥ 50%</div>
+          </div>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Estudiante</th><th>Curso</th><th>% Ausencias</th><th>Nivel de Riesgo</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Ana Martínez</strong></td><td>5to A</td><td>62%</td><td><span class="badge badge-fallido">Alto</span></td></tr>
+              <tr><td><strong>Carlos Ramírez</strong></td><td>5to A</td><td>55%</td><td><span class="badge badge-fallido">Alto</span></td></tr>
+              <tr><td><strong>María González</strong></td><td>5to A</td><td>38%</td><td><span style="display:inline-flex;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:#fffbeb;color:#d97706;">Medio</span></td></tr>
+              <tr><td><strong>Juan López</strong></td><td>4to B</td><td>28%</td><td><span style="display:inline-flex;padding:3px 10px;border-radius:12px;font-size:11px;font-weight:600;background:#fffbeb;color:#d97706;">Medio</span></td></tr>
+              <tr><td><strong>Laura Fernández</strong></td><td>4to A</td><td>12%</td><td><span class="badge badge-enviado">Bajo</span></td></tr>
+              <tr><td><strong>Pedro Sánchez</strong></td><td>3ro B</td><td>8%</td><td><span class="badge badge-enviado">Bajo</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="page-footer">
+          <div class="footer-title">Contacto</div>
+          <div class="footer-socials">
+            <div class="social-btn social-fb"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></div>
+            <div class="social-btn social-wa"><svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></div>
+            <div class="social-btn social-ig"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="white"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white" stroke-width="2"/></svg></div>
+          </div>
+          <div class="footer-copy">© 2026 Sistema de Registro de Asistencia Estudiantil</div>
+        </div>
+      </div>
+
+      <!-- NOTIFICACIONES -->
+      <div id="page-notificaciones" class="page">
+        <div class="notif-header">
+          <div>
+            <div class="page-title">Notificaciones</div>
+            <div class="page-subtitle">Historial de mensajes enviados a padres y profesores</div>
+          </div>
+          <button class="btn-primary" onclick="openModal('modalNotif')">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Enviar notificación
+          </button>
+        </div>
+        <div class="notif-stats">
+          <div class="notif-stat-card">
+            <div class="notif-stat-icon green">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div><div class="notif-stat-label">Enviados</div><div class="notif-stat-value">6</div></div>
+          </div>
+          <div class="notif-stat-card">
+            <div class="notif-stat-icon red">
+              <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+            </div>
+            <div><div class="notif-stat-label">Fallidos</div><div class="notif-stat-value">2</div></div>
+          </div>
+        </div>
+        <div class="notif-list">
+          <div class="notif-item">
+            <div class="notif-status-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Padres de Carlos Ramírez</span><span class="badge badge-enviado">Enviado</span></div>
+              <div class="notif-msg">Alerta de ausencias frecuentes</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-13 10:30</div>
+            </div>
+          </div>
+          <div class="notif-item">
+            <div class="notif-status-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Padres de Ana Martínez</span><span class="badge badge-enviado">Enviado</span></div>
+              <div class="notif-msg">Notificación de riesgo académico</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-13 09:15</div>
+            </div>
+          </div>
+          <div class="notif-item">
+            <div class="notif-status-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Profesores 5to A</span><span class="badge badge-fallido">Fallido</span></div>
+              <div class="notif-msg">Reunión de seguimiento programada</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-13 08:45</div>
+            </div>
+          </div>
+          <div class="notif-item">
+            <div class="notif-status-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Padres de María González</span><span class="badge badge-enviado">Enviado</span></div>
+              <div class="notif-msg">Bajo rendimiento en Matemáticas</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-12 16:20</div>
+            </div>
+          </div>
+          <div class="notif-item">
+            <div class="notif-status-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Todos los padres</span><span class="badge badge-enviado">Enviado</span></div>
+              <div class="notif-msg">Recordatorio: Reunión general el viernes</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-12 14:00</div>
+            </div>
+          </div>
+          <div class="notif-item">
+            <div class="notif-status-icon green"><svg viewBox="0 0 24 24" fill="none" stroke="#22c55e" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Padres de Diego Morales</span><span class="badge badge-enviado">Enviado</span></div>
+              <div class="notif-msg">Alerta de participación en clase</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-12 11:30</div>
+            </div>
+          </div>
+          <div class="notif-item">
+            <div class="notif-status-icon red"><svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg></div>
+            <div>
+              <div style="display:flex;align-items:center;gap:8px;"><span class="notif-recipient">Padres de Pedro Sánchez</span><span class="badge badge-fallido">Fallido</span></div>
+              <div class="notif-msg">Reporte mensual de asistencia</div>
+              <div class="notif-time"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>2026-04-11 09:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /content -->
+  </main>
+</div><!-- /app -->
+
+<!-- MODALS -->
+<div id="modalCurso" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header"><span class="modal-title">Crear Curso</span><button class="modal-close" onclick="closeModal('modalCurso')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="form-group"><label class="form-label">Grado</label><select class="form-input"><option>1ro</option><option>2do</option><option>3ro</option><option>4to</option><option>5to</option></select></div>
+    <div class="form-group"><label class="form-label">Sección</label><select class="form-input"><option>A</option><option>B</option><option>C</option></select></div>
+    <div class="form-group"><label class="form-label">Docente</label><select class="form-input"><option>Prof. María García</option><option>Prof. Juan Pérez</option><option>Prof. Carmen López</option></select></div>
+    <div class="form-group"><label class="form-label">Año Escolar</label><input class="form-input" value="2024-2025"></div>
+    <div class="modal-footer"><button class="btn-secondary" onclick="closeModal('modalCurso')">Cancelar</button><button class="btn-primary" onclick="closeModal('modalCurso')">Guardar</button></div>
+  </div>
+</div>
+
+<div id="modalEstudiante" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header"><span class="modal-title">Agregar Estudiante</span><button class="modal-close" onclick="closeModal('modalEstudiante')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="form-group"><label class="form-label">Nombre</label><input class="form-input" placeholder="Ej. Ana"></div>
+    <div class="form-group"><label class="form-label">Apellido</label><input class="form-input" placeholder="Ej. Martínez"></div>
+    <div class="form-group"><label class="form-label">Fecha de Nacimiento</label><input class="form-input" type="date"></div>
+    <div class="form-group"><label class="form-label">Curso</label><select class="form-input"><option>5to A</option><option>5to B</option><option>4to A</option><option>4to B</option><option>3ro A</option></select></div>
+    <div class="modal-footer"><button class="btn-secondary" onclick="closeModal('modalEstudiante')">Cancelar</button><button class="btn-primary" onclick="closeModal('modalEstudiante')">Guardar</button></div>
+  </div>
+</div>
+
+<div id="modalTutor" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header"><span class="modal-title">Agregar Tutor</span><button class="modal-close" onclick="closeModal('modalTutor')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="form-group"><label class="form-label">Nombre</label><input class="form-input" placeholder="Ej. Roberto"></div>
+    <div class="form-group"><label class="form-label">Apellido</label><input class="form-input" placeholder="Ej. Martínez"></div>
+    <div class="form-group"><label class="form-label">Teléfono WhatsApp</label><input class="form-input" placeholder="809-000-0000"></div>
+    <div class="form-group"><label class="form-label">Parentesco</label><select class="form-input"><option>Padre</option><option>Madre</option><option>Tío</option><option>Abuelo</option><option>Abuela</option><option>Otro</option></select></div>
+    <div class="modal-footer"><button class="btn-secondary" onclick="closeModal('modalTutor')">Cancelar</button><button class="btn-primary" onclick="closeModal('modalTutor')">Guardar</button></div>
+  </div>
+</div>
+
+<div id="modalUsuario" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header"><span class="modal-title">Agregar Usuario</span><button class="modal-close" onclick="closeModal('modalUsuario')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="form-group"><label class="form-label">Nombre</label><input class="form-input" placeholder="Nombre completo"></div>
+    <div class="form-group"><label class="form-label">Correo</label><input class="form-input" type="email" placeholder="correo@escuela.edu.do"></div>
+    <div class="form-group"><label class="form-label">Contraseña</label><input class="form-input" type="password" placeholder="••••••••"></div>
+    <div class="form-group"><label class="form-label">Rol</label><select class="form-input"><option>Docente</option><option>Admin</option></select></div>
+    <div class="modal-footer"><button class="btn-secondary" onclick="closeModal('modalUsuario')">Cancelar</button><button class="btn-primary" onclick="closeModal('modalUsuario')">Guardar</button></div>
+  </div>
+</div>
+
+<div id="modalNotif" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-header"><span class="modal-title">Enviar Notificación</span><button class="modal-close" onclick="closeModal('modalNotif')"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button></div>
+    <div class="form-group"><label class="form-label">Destinatario</label><select class="form-input"><option>Padres de Ana Martínez</option><option>Padres de Carlos Ramírez</option><option>Todos los padres</option><option>Profesores 5to A</option></select></div>
+    <div class="form-group"><label class="form-label">Mensaje</label><textarea class="form-input" rows="4" style="resize:vertical;" placeholder="Escribe el mensaje..."></textarea></div>
+    <div class="modal-footer"><button class="btn-secondary" onclick="closeModal('modalNotif')">Cancelar</button><button class="btn-primary" onclick="closeModal('modalNotif')">Enviar</button></div>
+  </div>
+</div>
+
+<script>
+  const API_URL = "https://practicafinal-production.up.railway.app";
+
+  // --- NAVIGATION ---
+  function showPage(pageId, navItem) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById('page-' + pageId).classList.add('active');
+    navItem.classList.add('active');
+
+    // Scroll to top
+    document.querySelector('.content').scrollTop = 0;
+
+    // Init charts only when dashboard is shown
+    if (pageId === 'dashboard') initCharts();
+  }
+
+  async function enterApp() {
+    const correo = document.querySelector("#loginPage input[type=email]").value;
+    const contrasena = document.querySelector("#loginPage input[type=password]").value;
+    try {
+      const res = await fetch(API_URL + "/api/Auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ correo, contrasena })
+      });
+      if (!res.ok) { alert("Credenciales incorrectas"); return; }
+      const data = await res.json();
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("nombre", data.nombre);
+      localStorage.setItem("rol", data.rol);
+    } catch(e) {
+      console.warn("API no disponible, modo demo");
+    }
+    document.getElementById('loginPage').style.display = 'none';
+    document.getElementById('appShell').style.display = 'flex';
+    initCharts();
+    buildAttendanceTable();
+  }
+
+  // --- MODALS ---
+  function openModal(id) { document.getElementById(id).classList.add('open'); }
+  function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+  document.querySelectorAll('.modal-overlay').forEach(overlay => {
+    overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
+  });
+
+  // --- ATTENDANCE TABLE ---
+  const students = [
+    { mat: '2024001', name: 'Ana Martínez' },
+    { mat: '2024002', name: 'Carlos Ramírez' },
+    { mat: '2024003', name: 'María González' },
+    { mat: '2024004', name: 'Juan López' },
+    { mat: '2024005', name: 'Laura Fernández' },
+    { mat: '2024006', name: 'Pedro Sánchez' },
+    { mat: '2024007', name: 'Sofía Torres' },
+    { mat: '2024008', name: 'Diego Morales' },
+    { mat: '2024009', name: 'Valentina Castro' },
+    { mat: '2024010', name: 'Lucas Herrera' },
+  ];
+  const attendance = {};
+
+  function buildAttendanceTable() {
+    const tbody = document.getElementById('attendanceBody');
+    tbody.innerHTML = '';
+    students.forEach(s => {
+      attendance[s.mat] = null;
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td style="font-family:'DM Mono',monospace;font-size:12px;color:var(--text-secondary);">${s.mat}</td>
+        <td><strong>${s.name}</strong></td>
+        <td>5to A</td>
+        <td>
+          <div class="attend-btn-group">
+            <button class="attend-btn" onclick="setAttend('${s.mat}','presente',this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              Presente
+            </button>
+            <button class="attend-btn" onclick="setAttend('${s.mat}','tarde',this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Tarde
+            </button>
+            <button class="attend-btn" onclick="setAttend('${s.mat}','ausente',this)">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              Ausente
+            </button>
+          </div>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+  }
+
+  function setAttend(mat, state, btn) {
+    attendance[mat] = state;
+    const group = btn.closest('.attend-btn-group');
+    group.querySelectorAll('.attend-btn').forEach(b => {
+      b.classList.remove('active-presente', 'active-tarde', 'active-ausente');
+    });
+    btn.classList.add('active-' + state);
+  }
+
+  // --- CHARTS ---
+  let charts = {};
+  function initCharts() {
+    if (charts.semanal) { charts.semanal.destroy(); }
+    if (charts.riesgo) { charts.riesgo.destroy(); }
+
+    const ctxS = document.getElementById('chartSemanal');
+    const ctxR = document.getElementById('chartRiesgo');
+    if (!ctxS || !ctxR) return;
+
+    charts.semanal = new Chart(ctxS, {
+      type: 'line',
+      data: {
+        labels: ['Lun', 'Mar', 'Mié', 'Jue', 'Vie'],
+        datasets: [{
+          data: [97, 83, 88, 79, 85],
+          borderColor: '#1a40d4',
+          backgroundColor: 'rgba(26,64,212,0.07)',
+          borderWidth: 2,
+          pointBackgroundColor: '#fff',
+          pointBorderColor: '#1a40d4',
+          pointBorderWidth: 2,
+          pointRadius: 4,
+          fill: true,
+          tension: 0.3
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { min: 0, max: 100, ticks: { font: { size: 11 }, color: '#999' }, grid: { color: '#eee' } },
+          x: { ticks: { font: { size: 11 }, color: '#999' }, grid: { display: false } }
+        }
+      }
+    });
+
+    charts.riesgo = new Chart(ctxR, {
+      type: 'bar',
+      data: {
+        labels: ['Bajo', 'Medio', 'Alto'],
+        datasets: [{
+          data: [130, 47, 8],
+          backgroundColor: ['#1a40d4', '#1a40d4', '#1a40d4'],
+          borderRadius: 4,
+        }]
+      },
+      options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { display: false } },
+        scales: {
+          y: { ticks: { font: { size: 11 }, color: '#999' }, grid: { color: '#eee' } },
+          x: { ticks: { font: { size: 11 }, color: '#999' }, grid: { display: false } }
+        }
+      }
+    });
+  }
+</script>
+</body>
+</html>
